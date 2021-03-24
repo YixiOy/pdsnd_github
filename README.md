@@ -1,17 +1,33 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
-### Date created
-Include the date you created this project and README file.
+- Asks user to specify a city, month, and day to analyze.
+	- Returns:
+        - (str) city - name of the city to analyze
+        - (str) month - name of the month to filter by, or "all" to apply no month filter
+        - (str) day - name of the day of week to filter by, or "all" to apply no day filter
 
-### Project Title
-Replace the Project Title
+- Loads data for the specified city and filters by month and day if applicable.
+  	- Args:
+        - (str) city - name of the city to analyze
+        - (str) month - name of the month to filter by, or "all" to apply no month filter
+        - (str) day - name of the day of week to filter by, or "all" to apply no day filter
+    - Returns:
+        - df - Pandas DataFrame containing city data filtered by month and day
 
-### Description
-Describe what your project is about and what it does
+- Displays statistics on the most frequent times of travel.
+	- display the most common month
+	- display the most common day of week
+	- display the most common start hour
 
-### Files used
-Include the files used
+- Displays statistics on the most popular stations and trip.
+	- display most commonly used start station
+	- display most commonly used end station
+	- display most frequent combination of start station and end station trip
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- Displays statistics on the total and average trip duration.
+	- display total travel time
+	- display mean travel time
 
+- Displays statistics on bikeshare users.
+	- display counts of user types
+	- display counts of gender
+	- display earliest, most recent, and most common year of birth
