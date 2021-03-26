@@ -1,6 +1,6 @@
 ## The Bikeshare project 
 
-This project does the following:
+This project does the following
 
 - Asks user to specify a city, month, and day to analyze.
 	- Returns:
