@@ -84,7 +84,7 @@ def time_stats(df):
 
     # display the most common month
     popular_month = df['month'].mode()[0]
-    print('\nMost common month: ', popular_month)
+    print('\nThe most common month is {}'.format(popular_month))
 
 
     # display the most common day of week
@@ -126,7 +126,7 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -182,7 +182,7 @@ def main():
 
         time_stats(df)
         station_stats(df)
-        trip_duration_stats(df)
+        duration_stats(df)
         user_stats(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
